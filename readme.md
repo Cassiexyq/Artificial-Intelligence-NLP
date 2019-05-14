@@ -1,4 +1,4 @@
-### pAI_NLP
+### AI_NLP
 #### Week 1 
  **内容**
  * [x] 搜索 dfs,bfs
