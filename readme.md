@@ -34,13 +34,21 @@
 **内容**
 
 * [x] 通过cut问题理解动态规划--不断查表过程
+   - 分析子问题的重复性
+   - 子问题进行存储
+   - solution进行解析
 * [x] python面向函数，装饰器的作用
 * [x] 字符串的Edit distance--一个字符串到另一个字符串的变化--solution
+* [ ] 
 * [x] 练习python web，准备项目一  <https://bottlepy.org/>
 
 #### Week 5
 
 **内容**
+
+* [ ] wordEmbedding
+* [ ] 关键词， NER
+* [ ] dependency parsing
 
 
 
