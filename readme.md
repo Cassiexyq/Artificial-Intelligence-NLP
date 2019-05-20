@@ -39,16 +39,16 @@
    - solution进行解析
 * [x] python面向函数，装饰器的作用
 * [x] 字符串的Edit distance--一个字符串到另一个字符串的变化--solution
-* [ ] 
+* [ ] k- person-salesman (待改进，用动态规划)
 * [x] 练习python web，准备项目一  <https://bottlepy.org/>
 
 #### Week 5
 
 **内容**
 
-* [ ] wordEmbedding
+* [x] word2vec
 * [ ] 关键词， NER
-* [ ] dependency parsing
+* [ ] name entity(哈工大LTP) + dependency parsing
 
 
 
