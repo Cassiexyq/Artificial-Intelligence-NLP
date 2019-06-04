@@ -38,9 +38,20 @@
   * 对象.replace(rgExp, replceText, max): 前两个都一定要有，max可选，rgExp表示是string对象；replaceText就是一个string对象；max是一个数字，表示对象里面每一个rgExp都替换成replaceText,从左至右最多max次， replace不能用正则
   * re.sub(pattern,repl,string,count,flags):前三个必选，后两个可选，pattern表示正则表达式的模式字符串，repl是被替换的字符串，string是要被处理的原字符串，count是匹配的次数
 
-* reduce(function, iterable[, initializer])函数：对参数序列元素进行累积如<code>reduce(add, [1,2,3,4,5])</code> 
+* reduce(function, iterable[, initializer])函数：
 
-  ​	<code>reduce(lambda x,y: x+y, [1,2,3,4,5])</code>
+  ​        对参数序列元素进行累积
+
+  ```python
+  from functools import reduce
+  from operator import and_
+  
+  reduce(add, [1,2,3,4,5])
+  reduce(lambda x,y: x+y, [1,2,3,4,5])
+  
+  d1,d2,d3 = {1,2,3},{4,5,6,3,2},{1,3,4}
+  reduce(and_, [d1,d2,d3])  #三个集合取交集
+  ```
 
 * eval()函数：
 
@@ -88,23 +99,21 @@
 
 * 数组
 
-  <code>X[random_choose].toarray().shape # (1,1000)  </code>
-
-  <code>X[random_choose].toarray()[0].shape #(1000,)</code>
+  ```python
+  X.shape  #(50000,10000)
+  X[0].toarray()  #array([[0., 0., 0., ..., 0., 0., 0.]])   (1, 10000)
+  X[0].toarray()[0] #array([0., 0., 0., ..., 0., 0., 0.]) (10000,)
+  ```
 
 * defaultdict用法：
 
-  > ```python
-  > strings = ('puppy', 'kitten', 'puppy', 'puppy',
-  >            'weasel', 'puppy', 'kitten', 'puppy')
-  > counts = {}
-  > for kw in strings:
-  >     counts[kw] += 1strings = ('puppy', 'kitten', 'puppy', 'puppy',
-  >            'weasel', 'puppy', 'kitten', 'puppy')
-  > counts = {}
-  > for kw in strings:
-  >     counts[kw] += 1
-  > ```
+  ```PYTHON
+  strings = ('puppy', 'kitten', 'puppy', 'puppy',
+             'weasel', 'puppy', 'kitten', 'puppy')
+  counts = {}
+  for kw in strings:
+      counts[kw] += 1
+  ```
 
   这是会报错的，因为每次对存在的键的数字加1，那没有键的数字就会报错，这种错误首先想到的是加入一个判断语句，判断是否在字典中出现，也可以用dicr.setdefault()方法设置默认值`dict.setdefault()`方法接收两个参数，第一个参数是健的名称，第二个参数是默认值。假如字典中不存在给定的键，则返回参数中提供的默认值；反之，则返回字典中保存的值。利用`dict.setdefault()`方法的返回值可以重写for循环中的代码，使其更加简洁。
 
@@ -116,7 +125,7 @@
   counts = defaultdict(lambda: 0) #使用lambda来定义简单的函数
   ```
 
-
+* 
 
 
 
