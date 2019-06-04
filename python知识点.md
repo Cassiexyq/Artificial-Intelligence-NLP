@@ -42,13 +42,13 @@
 
   ​	<code>reduce(lambda x,y: x+y, [1,2,3,4,5])</code>
 
-* eval()函数：<code>x = 7 
+* eval()函数：
 
+  ```python
+  x = 7 
   eval('3 * x')  # 21
-
   eval('pow(2,2)') # 4 
-
-  </code>
+  ```
 
 * 用python导出数据库数据到csv加入表头信息，用sql查询得不到表头，所以插入的信息就只是每行数据，一般用csv.writer(f, dialect='excel')获得，这样就没有表头了，所以自己加一条write.writerow当作一行数据写进csv，一般如果是自己定义的数据，就可以用字典数组，用csv,DictWriter()，这就可以加表头
 
@@ -74,59 +74,47 @@
 
     * 传入一个包含true/false作为参数。返回true的下标
 
-      <code>
-
+       ``` python
       np.where(x%2==1) #返回数组x中所有奇数的下标
-
       y[np.where(y>2)] # 返回数组Y中所有大于2 的元素
-
-      </code>
+       ```
 
     * 给where传递一个条件数组和两个值或数组，对于条件数组中等价于true的位置，从第一个值或数组张进行替换，否则从第二个中替换
 
-      <code>
-
+      ```python
       x = np.array([1,0,3],[4,5,0])
-
       np.where(x, [30,40,50],[60,70,80])  # [30,70,50],[30,40,80]
+      ```
 
-      </code>
+* 数组
 
-* 数组<code>X[random_choose].toarray().shape # (1,1000)
+  <code>X[random_choose].toarray().shape # (1,1000)  </code>
 
-  X[random_choose].toarray()[0].shape #(1000,)
-
-   </code>
+  <code>X[random_choose].toarray()[0].shape #(1000,)</code>
 
 * defaultdict用法：
 
-  ’‘’
-
-  <code>strings = ('puppy', 'kitten', 'puppy', 'puppy',
-             'weasel', 'puppy', 'kitten', 'puppy')
-  counts = {}
-
-  for kw in strings:
-      counts[kw] += 1strings = ('puppy', 'kitten', 'puppy', 'puppy',
-             'weasel', 'puppy', 'kitten', 'puppy')
-  counts = {}
-
-  for kw in strings:
-      counts[kw] += 1</code> 
-
-  ‘’‘
+  > ```python
+  > strings = ('puppy', 'kitten', 'puppy', 'puppy',
+  >            'weasel', 'puppy', 'kitten', 'puppy')
+  > counts = {}
+  > for kw in strings:
+  >     counts[kw] += 1strings = ('puppy', 'kitten', 'puppy', 'puppy',
+  >            'weasel', 'puppy', 'kitten', 'puppy')
+  > counts = {}
+  > for kw in strings:
+  >     counts[kw] += 1
+  > ```
 
   这是会报错的，因为每次对存在的键的数字加1，那没有键的数字就会报错，这种错误首先想到的是加入一个判断语句，判断是否在字典中出现，也可以用dicr.setdefault()方法设置默认值`dict.setdefault()`方法接收两个参数，第一个参数是健的名称，第二个参数是默认值。假如字典中不存在给定的键，则返回参数中提供的默认值；反之，则返回字典中保存的值。利用`dict.setdefault()`方法的返回值可以重写for循环中的代码，使其更加简洁。
 
   使用collections.defaultdict方法本身提供了默认值的功能，defaultdict类的初始化函数接受一个类型作为参数，当所访问的键不存在的时候，可以实例化一个值作为默认值
 
-  <code> def zero(): return 0
-
+  ```python
+  def zero(): return 0
   dd=defaultdice(zero)
-
   counts = defaultdict(lambda: 0) #使用lambda来定义简单的函数
-
-  </code>
+  ```
 
 
 
