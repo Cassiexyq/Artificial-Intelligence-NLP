@@ -76,5 +76,11 @@
 
 * [x] PageRank，自带函数，模拟网站被链接的rank
 
+#### Week 7
 
+**内容**
+
+* 分类和回归
+* evaluation：ACC/Precision/Recall/PR曲线/F1score/MSE/AUC
+* overfitting，underfitting
 
