@@ -84,3 +84,34 @@
 * evaluation：ACC/Precision/Recall/PR曲线/F1score/MSE/AUC
 * overfitting，underfitting
 
+#### Week 8
+
+**内容**
+
+* 众数，平均数，中位数，标准数，方差
+* normalization（归一化）
+* outliner (四分位)
+* bias variance
+* 训练集，测试集，验证集
+* [ ] 新华社抄袭文本的判断 
+
+#### Week 9
+
+**内容**
+
+* 交叉熵，信息熵，相对熵
+* sigmod和softmax
+* SVM
+  * unbalance problem（加权重）
+  * 不用梯度下降，直接求导，神经网络线性和非线性的都，无法求导，需要梯度下降
+
+#### Week 10
+
+**内容**
+
+* 朴素贝叶斯分类（推理，检验垃圾邮件，检验账号真实，生病概率），高斯贝叶斯（连续值离散化）
+* 决策树（信息增益，信息增益率，基尼指数，前剪枝，后剪枝）
+* 随机森林
+
+
+
