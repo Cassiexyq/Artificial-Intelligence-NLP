@@ -93,7 +93,7 @@
 * outliner (四分位)
 * bias variance
 * 训练集，测试集，验证集
-* [ ] 新华社抄袭文本的判断 
+* [ ] [新华社抄袭文本](https://github.com/Cassiexyq/Artificial-Intelligence-NLP/blob/master/Week8/%E6%96%B0%E5%8D%8E%E7%A4%BE%E6%96%87%E6%9C%AC%E7%9A%84%E5%88%86%E7%B1%BB.ipynb)
 
 #### Week 9
 
